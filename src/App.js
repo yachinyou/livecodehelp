@@ -9,9 +9,10 @@ import Footer from './Components/Footer/Footer';
 import ThankYou from './Components/SignUpThankYou/SignUpThankYou';
 import AboutPage from './Components/About/About';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-648673-27');
-ReactGA.pageview(window.location.pathname + window.location.search);
+//Update Google analytics
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('UA-648673-27');
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
 
@@ -23,7 +24,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <ReactTitle title="UX Challenge" />
+          <ReactTitle title="Live Code Help" />
           <Route path="/" component={NavBar} />
           <Route path="/" exact component={Hero} />
           <Route path="/" exact component={SellSheet} />
